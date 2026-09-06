@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-jakarta);
+  background-color: #FAF8F5;
+  color: #1F2421;
+  line-height: 1.6;
+}
+
+::selection {
+  background: #d5ae5a;
+  color: #0f2416;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Custom component classes */
+@layer components {
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .card-base {
+    @apply bg-white border border-stone-200 rounded-2xl p-6 shadow-card transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-malnad-green-700 text-white rounded-lg font-semibold transition-all duration-300 hover:bg-malnad-green-800 active:scale-95;
+  }
+
+  .btn-bronze {
+    @apply px-6 py-3 bg-warm-bronze-500 text-white rounded-lg font-semibold transition-all duration-300 hover:bg-warm-bronze-600 active:scale-95;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-malnad-green-700 to-warm-bronze-500 bg-clip-text text-transparent;
+  }
+}
