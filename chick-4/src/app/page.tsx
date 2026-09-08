@@ -4,12 +4,7 @@ import { useState } from 'react'
 import { ArrowRight, Check, ChevronDown, Compass, MapPin, Menu, Mountain, Phone, ShieldCheck, Sparkles, Trees, Truck, Users, X } from 'lucide-react'
 
 const phone = '919876543210'
-const routes = [
-  { no: '01', title: 'Peak & Mist Trail', tag: 'Most Popular', image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=85', places: ['Mullayanagiri', 'Jhari Waterfalls', 'Honnammana Falls', 'Baba Budangiri'] },
-  { no: '02', title: 'Waterfall & Valley Explorer', tag: 'Scenic & Adventure', image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1200&q=85', places: ['Deviramma Temple', 'Kemmanagundi', 'Kallathigiri Falls', 'Hebbe Waterfalls'] },
-  { no: '03', title: 'Wild Safari & Plantations', tag: 'Nature & Wildlife', image: 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85', places: ['Malandaru Shooting Point', 'Muthodi Forest', 'Bhadra Wildlife Sanctuary', 'Lush Coffee Estates'] },
-  { no: '04', title: 'Heritage & Watersports', tag: 'Spiritual & Historical', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=85', places: ['Belur Temple', 'Halebidu Temple', 'Yagachi Water Sports'] },
-]
+
 const wa = (message: string) => `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 
 export default function Home() {
